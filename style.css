@@ -1,0 +1,42 @@
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background-color: #EEE;
+}
+
+.input-text {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 14px;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.edit-button {
+  background-color: #505355;
+  color: white;
+}
+
+.edit-form {
+
+}
+
+.blue-text {
+  color: #1ECEFD;
+  font-weight: bolder;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 10px;
+}
