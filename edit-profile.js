@@ -8,11 +8,11 @@ const editProfile = {
       <input class="input-text" type="text" ng-model="$ctrl.profile.contact" placeholder="Contact Info">
       <label class="blue-text">Bio</label>      
       <input class="input-text" type="text" ng-model="$ctrl.profile.bio" placeholder="Bio">
-      <button class="edit-button" ng-click="/profile">Edit Profile</button>
+      <button class="edit-button" ng-click="$ctrl.click();">Edit Profile</button>
     </form>
   `,
 
-  controller: ["ProfileService", function($location, ProfileService) {
+  controller: ["ProfileService", function(ProfileService) {
     const vm = this;
     vm.profile = angular.copy(ProfileService.getUserProfile());
     vm.editProfile = (profile) => {
@@ -20,7 +20,7 @@ const editProfile = {
       ProfileService.setUserProfile(profile);
     };
     vm.click = () => {
-      $location.path('/profile');
+      $location.path('#!/profile');
     }
 
   }]
